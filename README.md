@@ -6,7 +6,7 @@ Tested with Payload 2
 
 ## How to use
 
-1. Clone or download the theme and add it to your Payload.
+1. Clone or download the theme, then add it to your Payload source directory, typically under a folder named themes.
 2. Adjust your payload.config.ts as follows:
 
 ```ts
