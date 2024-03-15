@@ -1,0 +1,27 @@
+.field-type.password {
+  position: relative;
+
+  input {
+    @include formInput;
+  }
+}
+
+html[data-theme='light'] {
+  .field-type.password {
+    &.error {
+      input {
+        @include lightInputError;
+      }
+    }
+  }
+}
+
+html[data-theme='dark'] {
+  .field-type.password {
+    &.error {
+      input {
+        @include darkInputError;
+      }
+    }
+  }
+}

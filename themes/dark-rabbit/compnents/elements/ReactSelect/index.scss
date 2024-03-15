@@ -1,0 +1,90 @@
+.react-select-container {
+  width: 100%;
+}
+
+.react-select {
+  .rs__control {
+    @include formInput;
+    height: auto;
+    padding-top: base(0.25);
+    padding-bottom: base(0.25);
+    flex-wrap: nowrap;
+    border: 2px solid var(--theme-elevation-150);
+  }
+
+  .rs__indicator {
+    padding: 0px 4px;
+    cursor: pointer;
+  }
+
+  .rs__indicator-separator {
+    display: none;
+  }
+
+  .rs__input-container {
+    color: var(--theme-elevation-1000);
+  }
+
+  .rs__input {
+    font-family: var(--font-body);
+    width: 10px;
+  }
+
+  .rs__menu {
+    z-index: 2;
+    border-radius: var(--style-radius-m);
+    @include shadow-lg;
+    background: var(--theme-elevation-100);
+    border: 2px solid var(--theme-elevation-200);
+    padding: 8px;
+  }
+
+  .rs__group-heading {
+    color: var(--theme-elevation-800);
+    padding-left: base(0.5);
+    margin-bottom: base(0.25);
+    font-weight: 600;
+    font-size: inherit;
+    text-transform: unset;
+  }
+
+  .rs__option {
+    font-family: var(--font-body);
+    font-size: $baseline-body-size;
+
+    color: var(--theme-elevation-800);
+    margin: 4px 8px;
+    width: calc(100% - 16px);
+    border-radius: var(--style-radius-m);
+    font-weight: 600;
+
+    transition: var(--dr-fast) var(--dr-transition);
+    transition-property: background-color, color;
+
+    &--is-focused {
+      background-color: var(--theme-elevation-150);
+    }
+
+    &--is-selected {
+      background-color: var(--theme-elevation-200);
+
+      &:hover {
+        background-color: var(--theme-elevation-200);
+      }
+    }
+
+    &:hover {
+      background-color: var(--theme-elevation-150);
+    }
+  }
+
+  &--error {
+    div.rs__control {
+      background-color: var(--theme-error-100);
+    }
+  }
+
+  &.rs--is-disabled .rs__control {
+    background: var(--theme-elevation-50);
+  }
+}

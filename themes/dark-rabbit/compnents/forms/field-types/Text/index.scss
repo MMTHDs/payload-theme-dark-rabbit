@@ -1,0 +1,29 @@
+.field-type.text {
+  position: relative;
+
+  &:not(.has-many) {
+    input {
+      @include formInput;
+    }
+  }
+}
+
+html[data-theme='light'] {
+  .field-type.text {
+    &.error {
+      input {
+        @include lightInputError;
+      }
+    }
+  }
+}
+
+html[data-theme='dark'] {
+  .field-type.text {
+    &.error {
+      input {
+        @include darkInputError;
+      }
+    }
+  }
+}

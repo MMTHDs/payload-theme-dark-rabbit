@@ -1,0 +1,24 @@
+:root {
+  /**
+  * Color
+  */
+  --dr-project-color: #2ecc56;
+
+  /**
+  * Color Mix
+  */
+  --dr--primary: var(--dr-project-color);
+  --dr--primary-background: color-mix(in srgb, var(--theme-elevation-0), var(--dr--primary) 10%);
+  --dr--primary-subdued: color-mix(in srgb, var(--theme-elevation-0), var(--dr--primary) 50%);
+  --dr--primary-accent: color-mix(in srgb, var(--dr--primary), #16151a 25%);
+
+  /**
+  * Transitions
+  */
+  --dr-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --dr-transition-in: cubic-bezier(0, 0, 0.2, 1);
+  --dr-transition-out: cubic-bezier(0.4, 0, 1, 1);
+  --dr-fast: 125ms;
+  --dr-medium: 200ms;
+  --dr-slow: 300ms;
+}

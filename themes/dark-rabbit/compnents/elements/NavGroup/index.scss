@@ -1,0 +1,75 @@
+.nav-group {
+  width: 100%;
+  margin-bottom: base(0.1);
+
+  &__toggle {
+    cursor: pointer;
+    color: inherit;
+    background: transparent;
+    padding-left: 0;
+    border: 0;
+    margin-bottom: base(0.15);
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    padding: base(0.25) base(1) base(0.25) base(1);
+    gap: base(0.5);
+    justify-content: flex-start;
+    font-weight: 500;
+    border-radius: var(--style-radius-m);
+    line-height: 25px;
+    font-size: 14px;
+
+    transition: var(--dr-fast) var(--dr-transition);
+    transition-property: background-color, color;
+
+    svg {
+      flex-shrink: 0;
+      margin-top: base(-0.2);
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: var(--theme-elevation-150);
+      color: inherit;
+
+      .stroke {
+        stroke: var(--dr-project-color);
+      }
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    /* &::before {
+      //content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZvbGRlciI+PHBhdGggZD0iTTIwIDIwYTIgMiAwIDAgMCAyLTJWOGEyIDIgMCAwIDAtMi0yaC03LjlhMiAyIDAgMCAxLTEuNjktLjlMOS42IDMuOUEyIDIgMCAwIDAgNy45MyAzSDRhMiAyIDAgMCAwLTIgMnYxM2EyIDIgMCAwIDAgMiAyWiIvPjwvc3ZnPg==);
+      content: '\e0d3';
+      font-family: 'lucide' !important;
+      font-size: inherit;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      color: var(--dr-project-color);
+      font-size: 24px;
+    } */
+  }
+
+  &__indicator {
+    position: relative;
+    flex-shrink: 0;
+    margin-left: auto;
+
+    svg .stroke {
+      stroke: var(--dr-project-color);
+    }
+  }
+
+  &--collapsed {
+    .collapsible__toggle {
+      border-bottom-right-radius: $style-radius-s;
+      border-bottom-left-radius: $style-radius-s;
+    }
+  }
+}

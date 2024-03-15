@@ -1,0 +1,82 @@
+@import '~payload/scss';
+
+/**
+* Override styles
+*/
+@import './scss/vars';
+@import './scss/z-index';
+@import './scss/type';
+@import './scss/queries';
+@import './scss/resets';
+@import './scss/svg';
+@import './scss/app.scss';
+
+// Custom vars
+@import './theme-vars';
+@import './theme';
+
+// Elements
+@import './compnents/elements/Button';
+@import './compnents/elements/Collapsible';
+@import './compnents/elements/ColumnSelector';
+@import './compnents/elements/Card';
+@import './compnents/elements/DatePicker';
+@import './compnents/elements/DocumentFields';
+@import './compnents/elements/DocumentControls';
+@import './compnents/elements/DocumentHeader';
+@import './compnents/elements/DocumentHeader/Tabs';
+@import './compnents/elements/DocumentHeader/Tabs/Tab';
+@import './compnents/elements/Drawer';
+@import './compnents/elements/EditMany';
+@import './compnents/elements/FileDetails';
+@import './compnents/elements/ListControls';
+@import './compnents/elements/Nav';
+@import './compnents/elements/Nav/NavToggler';
+@import './compnents/elements/NavGroup';
+@import './compnents/elements/Paginator';
+@import './compnents/elements/Pill';
+@import './compnents/elements/Popup';
+@import './compnents/elements/Popup/PopupButtonList';
+@import './compnents/elements/ReactSelect';
+@import './compnents/elements/ReactSelect/MultiValue';
+@import './compnents/elements/Table';
+@import './compnents/elements/Thumbnail';
+@import './compnents/elements/WhereBuilder';
+
+// Forms
+@import './compnents/forms/Label';
+
+// Forms: Form Fields
+@import './compnents/forms/field-types/Array';
+@import './compnents/forms/field-types/Blocks';
+@import './compnents/forms/field-types/Blocks/BlocksDrawer';
+@import './compnents/forms/field-types/Blocks/BlocksDrawer/BlockSearch';
+@import './compnents/forms/field-types/Blocks/SectionTitle';
+@import './compnents/forms/field-types/Checkbox';
+@import './compnents/forms/field-types/Code';
+@import './compnents/forms/field-types/Collapsible';
+@import './compnents/forms/field-types/ConfirmPassword';
+@import './compnents/forms/field-types/DateTime';
+@import './compnents/forms/field-types/Email';
+@import './compnents/forms/field-types/Group';
+@import './compnents/forms/field-types/JSON';
+@import './compnents/forms/field-types/Number';
+@import './compnents/forms/field-types/Password';
+@import './compnents/forms/field-types/Point';
+@import './compnents/forms/field-types/RadioGroup';
+@import './compnents/forms/field-types/RadioGroup/RadioInput';
+@import './compnents/forms/field-types/Relationship';
+@import './compnents/forms/field-types/Relationship/AddNew';
+@import './compnents/forms/field-types/Relationship/select-components/MultiValueLabel';
+@import './compnents/forms/field-types/Relationship/select-components/SingleValue';
+@import './compnents/forms/field-types/Row';
+@import './compnents/forms/field-types/Select';
+@import './compnents/forms/field-types/Tabs';
+@import './compnents/forms/field-types/Text';
+@import './compnents/forms/field-types/Textarea';
+@import './compnents/forms/field-types/Upload';
+
+// views
+@import './compnents/views/Account';
+@import './compnents/views/Dashboard';
+@import './compnents/views/collections/Edit/Auth';

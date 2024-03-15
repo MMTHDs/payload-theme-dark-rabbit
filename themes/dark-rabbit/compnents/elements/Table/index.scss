@@ -1,0 +1,44 @@
+.table {
+  margin-bottom: $baseline;
+  overflow: auto;
+  max-width: 100%;
+
+  thead {
+    color: var(--theme-elevation-800);
+
+    th {
+      font-weight: 600;
+      text-align: left;
+      [dir='rtl'] & {
+        text-align: right;
+      }
+    }
+  }
+
+  th,
+  td {
+    padding: base(0.75);
+    min-width: 150px;
+    border-bottom: 2px solid var(--theme-elevation-50);
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background: transparent;
+      }
+    }
+  }
+
+  a:focus-visible {
+    outline: var(--accessibility-outline);
+    outline-offset: var(--accessibility-outline-offset);
+  }
+
+  @include mid-break {
+    th,
+    td {
+      max-width: 70vw;
+    }
+  }
+}
