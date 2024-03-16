@@ -21,6 +21,11 @@ export default buildConfig({
 ```
 
 3. Modify the project color variable `--dr-project-color` in the `_theme-vars.scss` file as required.
+4. Install font
+
+```sh
+npm i @fontsource-variable/inter
+```
 
 ## Preview
 
