@@ -1,6 +1,6 @@
 # Dark Rabbit Theme for PayloadCMS
 
-The theme is an initial design to make the PayloadCMS UI more visually pleasing. It's not complete and may not be implemented cleanly in some areas. If anyone is interested, it can be further developed. It supports both light and dark modes, as it largely builds upon the pre-defined theme in Payload.
+The theme is an initial design to make the PayloadCMS UI more visually pleasing. It's not complete and may not be implemented cleanly in some areas. If anyone is interested, it can be further developed. It supports both light and dark modes, as it largely builds upon the pre-defined theme in Payload and CSS only at the moment for.
 
 Tested with Payload 2
 
@@ -26,6 +26,7 @@ export default buildConfig({
 ```sh
 npm i @fontsource-variable/inter
 ```
+5. Feel free to modify the theme if you want
 
 ## Preview
 
